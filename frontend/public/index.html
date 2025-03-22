@@ -39,6 +39,7 @@
       }
     </style>
     <title>React-Ecommerce</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -62,7 +63,14 @@
         <div class="collapse navbar-collapse" id="mynavbar">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link text-white" href="javascript:void(0)">Carts</a>
+              <a
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Your Carts"
+                class="nav-link text-white"
+                href="javascript:void(0)"
+                >Carts</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="javascript:void(0)"
@@ -95,7 +103,7 @@
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="text" placeholder="Search" />
-            <button class="btn btn-warning" type="button">Search</button>
+            <button type="button" class="btn btn-warning">Search</button>
           </form>
         </div>
       </div>
@@ -185,40 +193,81 @@
     <!-- Items -->
     <div class="container">
       <div class="row">
-        <div class="col-6 col-md d-flex justify-content-center">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
           <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
             src="/frontend/src/Images/Product Images/51P6c41AglL.jpg"
             alt="printer"
           />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Printer</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
         </div>
-        <div class="col-6 col-md d-flex justify-content-center">
+
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
           <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
             src="/frontend/src/Images/Product Images/61TapeOXotL._SL1500_.jpg.webp"
-            alt="Smartwatch"
+            alt="printer"
           />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Watch</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
         </div>
-        <div class="col-6 col-md d-flex justify-content-center">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
           <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
             src="/frontend/src/Images/Product Images/Earpod.jpg"
-            alt="Earpod"
+            alt="printer"
           />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Earpod</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
         </div>
-        <div class="col-6 col-md d-flex justify-content-center">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
           <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
             src="/frontend/src/Images/Product Images/HNTV43A4K_1.jpg"
-            alt="TV"
+            alt="printer"
           />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">TV</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
         </div>
       </div>
     </div>
     <!-- Electonics Section Ends -->
 
     <!-- Main Body Ends -->
-    <script
-      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <script>
+      src = "https://kit.fontawesome.com/your-fontawesome-kit.js";
+      crossorigin = "anonymous";
+    </script>
     <script src="/frontend/public/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

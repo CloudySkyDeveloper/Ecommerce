@@ -23,13 +23,11 @@
   line-height: 1;
 }
 
-.box__showing {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
-  transition: 0.3s !important;
+.border__del {
   border-radius: none !important;
   border: none !important;
 }
 
-.box__showing:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
+#Products {
+  width: 150px !important;
 }
