@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -102,8 +102,14 @@
             </div>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search" />
-            <button type="button" class="btn btn-warning">Search</button>
+            <input
+              id="searchInput"
+              class="form-control me-2"
+              type="text"
+              placeholder="Search"
+            />
+
+            <button type="submit" class="btn btn-warning">Search</button>
           </form>
         </div>
       </div>
@@ -188,7 +194,10 @@
     <!-- Electronics Section Starts-->
     <!-- Heading -->
     <div class="container-fluid p-0">
-      <h3 class="text-bg-dark p-1">Best of Electonics</h3>
+      <h3 class="text-bg-dark p-1 text-center">Products</h3>
+    </div>
+    <div class="container-fluid p-0">
+      <h4 class="text-bg-light p-3">Best of Electonics</h4>
     </div>
     <!-- Items -->
     <div class="container">
@@ -260,10 +269,328 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/51P6c41AglL.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Printer</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/61TapeOXotL._SL1500_.jpg.webp"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Watch</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/Earpod.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Earpod</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/HNTV43A4K_1.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">TV</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
     <!-- Electonics Section Ends -->
+    <!--Toys Section Starts  -->
+    <!-- Heading -->
+
+    <div class="container-fluid p-0">
+      <h4 class="text-bg-light p-3">Toys for Kids</h4>
+    </div>
+    <!-- Toys Section Ends -->
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/51P6c41AglL.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Printer</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/61TapeOXotL._SL1500_.jpg.webp"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Watch</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/Earpod.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Earpod</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/HNTV43A4K_1.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">TV</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/51P6c41AglL.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Printer</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/61TapeOXotL._SL1500_.jpg.webp"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Watch</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/Earpod.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Earpod</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/HNTV43A4K_1.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">TV</h4>
+            <p class="card-text"></p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Main Body Ends -->
+    <br />
+    <!-- Footer Starts -->
+    <div class="container-fluid">
+      <div class="row bg-dark pt-4 pe-4 ps-4">
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <h6 style="font-size: small" class="text-secondary pt-3">ABOUT</h6>
+          <a class="text-white parahover">Contact Us</a>
+          <a class="text-white parahover">About Us</a>
+          <a class="text-white parahover">Careers</a>
+          <a class="text-white parahover">Corporate Information</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <h6 style="font-size: small" class="text-secondary pt-3">
+            GROUP COMPANIES
+          </h6>
+          <a class="text-white parahover">Company#1</a>
+          <a class="text-white parahover">Company#2</a>
+          <a class="text-white parahover">Company#3</a>
+          <a class="text-white parahover">Company#4</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <h6 style="font-size: small" class="text-secondary pt-3">HELP</h6>
+          <a class="text-white parahover">Payments</a>
+          <a class="text-white parahover">Shipping</a>
+          <a class="text-white parahover">Cancellation & Returns</a>
+          <a class="text-white parahover">FAQ</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <h6 style="font-size: small" class="text-secondary pt-3">
+            CONSUMER POLICY
+          </h6>
+          <a class="text-white parahover">Cancellation & Returns</a>
+          <a class="text-white parahover">Terms of Use</a>
+          <a class="text-white parahover">Security</a>
+          <a class="text-white parahover">Privacy</a>
+          <a class="text-white parahover">Sitemap</a>
+          <a class="text-white parahover">Grivance Redressal</a>
+          <a class="text-white parahover">EPR Compliance</a>
+        </div>
 
+        <div
+          class="vertical_line_footer text-center col-6 col-sm-6 col-md-4 col-lg-2"
+        >
+          <h6 style="font-size: small" class="text-secondary pt-3">MAIL US:</h6>
+          <a class="text-white parahover">E-mail ID</a>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Tel Number</a>
+          <h6 style="font-size: small" class="text-secondary pt-3">SOCIAL:</h6>
+          <a href="/" class="social__icon--link" target="_blank"
+            ><i class="fab fa-facebook text-white"></i
+          ></a>
+          <a href="/" class="social__icon--link" target="_blank"
+            ><i class="fab fa-x-twitter text-white"></i
+          ></a>
+          <a href="/" class="social__icon--link" target="_blank"
+            ><i class="fab fa-youtube text-white"></i
+          ></a>
+          <a href="/" class="social__icon--link" target="_blank"
+            ><i class="fab fa-instagram text-white"></i
+          ></a>
+        </div>
+        <div
+          class="vertical_line_footer_right text-center col-6 col-sm-6 col-md-4 col-lg-2"
+        >
+          <h6 style="font-size: small" class="text-secondary pt-3">
+            REGISTERED OFFICE ADDRESS:
+          </h6>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Pin code</a>
+          <a class="text-white parahover">Phone Number</a>
+        </div>
+      </div>
+      <div class="row bg-dark p-4 horizontal_footer_line">
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"><i class="fas fa-shop"> </i> Become a Seller</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"><i class="fas fa-star"></i> Advertise</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"><i class="fas fa-gift"></i> Gift Cards</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"
+            ><i class="fas fa-circle-exclamation"></i> Help Center</a
+          >
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"
+            ><i class="fas fa-copyright"></i> Starting Year - Current Year
+            (Site-name)</a
+          >
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover">Icons</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Ends -->
     <script>
       src = "https://kit.fontawesome.com/your-fontawesome-kit.js";
       crossorigin = "anonymous";

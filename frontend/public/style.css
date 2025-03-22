@@ -31,3 +31,25 @@
 #Products {
   width: 150px !important;
 }
+
+.parahover {
+  font-size: x-small;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+  display: block;
+}
+
+.parahover:hover {
+  text-decoration: underline;
+}
+
+.vertical_line_footer {
+  border-left: 1px solid gray;
+}
+
+.vertical_line_footer_right {
+  border-right: 1px solid gray;
+}
+.horizontal_footer_line {
+  border-top: 1px solid gray;
+}
