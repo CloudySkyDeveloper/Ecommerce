@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/frontend/public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -21,13 +33,568 @@
         padding: 0;
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
-        ::-webkit-scrollbar {display: none};
+        ::-webkit-scrollbar {
+          display: none;
+        }
       }
     </style>
     <title>React-Ecommerce</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="javascript:void(0)">Logo</a>
+        <div
+          style="border: none"
+          class="navbar-toggler bg-dark"
+          type=""
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1 bg-light"></div>
+            <div class="bar2 bg-light"></div>
+            <div class="bar3 bg-light"></div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Your Carts"
+                class="nav-link text-white"
+                href="javascript:void(0)"
+                >Carts</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:void(0)"
+                >Sell Your Items</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:void(0)"
+                >24x7 Customer Care</a
+              >
+            </li>
+            <div class="dropdown">
+              <button
+                style="padding-left: 0; padding-right: 2px"
+                type="button"
+                class="btn btn-dark text-primary dropdown-toggle logins"
+                data-bs-toggle="dropdown"
+              >
+                Login
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                <li><a class="dropdown-item" href="#">Orders</a></li>
+                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                <li><a class="dropdown-item" href="#">Rewards</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+              </ul>
+            </div>
+          </ul>
+          <form class="d-flex">
+            <input
+              id="searchInput"
+              class="form-control me-2"
+              type="text"
+              placeholder="Search"
+            />
+
+            <button type="submit" class="btn btn-warning">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+    <!-- Main Body Starts -->
+
+    <!-- Carousel starts -->
+    <div id="carousel_demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carousel_demo"
+          data-bs-slide-to="0"
+          class="active bg-secondary"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel_demo"
+          data-bs-slide-to="1"
+          class="bg-secondary"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel_demo"
+          data-bs-slide-to="2"
+          class="bg-secondary"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="container">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/frontend/src/Images/paket_11.jpg"
+              alt="paket"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/frontend/src/Images/store_1.jpg"
+              alt="store"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/frontend/src/Images/balloon_8.jpg"
+              alt="balloon"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel_demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon bg-secondary"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel_demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon bg-secondary"></span>
+        </button>
+      </div>
+    </div>
+    <!-- Carousel Ends -->
+
+    <!-- Electronics Section Starts-->
+    <!-- Heading -->
+    <div class="container-fluid p-0">
+      <h3 class="text-bg-dark p-1 text-center">Products</h3>
+    </div>
+    <div class="container-fluid p-0">
+      <h4 class="text-bg-light p-3">Best of Electonics</h4>
+    </div>
+    <!-- Items -->
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/51P6c41AglL.jpg"
+            alt="printer"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Printer</h4>
+            <p class="card-text text-center">$30.23</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/61TapeOXotL._SL1500_.jpg.webp"
+            alt="smart watch"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Watch</h4>
+            <p class="card-text text-center">$21.99</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/Earpod.jpg"
+            alt="earpod"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Earpod</h4>
+            <p class="card-text text-center">$29.07</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/HNTV43A4K_1.jpg"
+            alt="TV"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">TV</h4>
+            <p class="card-text text-center">$98.00</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/Large TV.jpg"
+            alt="Moniter"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Moniter</h4>
+            <p class="card-text text-center">$100.98</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/Washing mechine.webp"
+            alt="washing machine"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Washer</h4>
+            <p class="card-text text-center">$230.00</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/Asus lap.jpg"
+            alt="laptop"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Laptop</h4>
+            <p class="card-text text-center">$676.67</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/iPhone15.webp"
+            alt="iphone15"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">iPhone 15</h4>
+            <p class="card-text text-center">$799.00</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <!-- Electonics Section Ends -->
+    <!--Toys Section Starts  -->
+    <!-- Heading -->
+
+    <div class="container-fluid p-0">
+      <h4 class="text-bg-light p-3">Toys for Kids</h4>
+    </div>
+    <!-- Toys Section Ends -->
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/jeep.webp"
+            alt="jeep"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Jeep</h4>
+            <p class="card-text text-center">$10.00</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/61knoDbRUwL._AC_UF1000,1000_QL80_.jpg"
+            alt="doll"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Doll</h4>
+            <p class="card-text text-center">$3.00</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/train.jpg"
+            alt="train"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Train</h4>
+            <p class="card-text text-center">$2.50</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/rubiks-cube.webp"
+            alt="rubik cube"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Cube</h4>
+            <p class="card-text text-center">$1.00</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/JCB.webp"
+            alt="jcb"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">JCB</h4>
+            <p class="card-text text-center">$5.00</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/gun.jpg"
+            alt="gun"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Gun</h4>
+            <p class="card-text text-center">$2.00</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/carshero.webp"
+            alt="car"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Cars</h4>
+            <p class="card-text text-center">$7.50</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md d-flex justify-content-center card border__del"
+        >
+          <img
+            id="Products"
+            style="margin-left: 50%; transform: translateX(-50%)"
+            class="card-img-bottom"
+            src="/frontend/src/Images/Product Images/bike.jpg"
+            alt="bike"
+          />
+          <div class="card-body mx-auto p-0">
+            <h4 class="card-title text-center">Bike</h4>
+            <p class="card-text text-center">$5.99</p>
+            <button class="btn btn-warning">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Body Ends -->
+    <br />
+    <!-- Footer Starts -->
+    <div class="container-fluid">
+      <div class="row bg-dark pt-4 pe-4 ps-4">
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <h6 style="font-size: small" class="text-secondary pt-3">ABOUT</h6>
+          <a class="text-white parahover">Contact Us</a>
+          <a class="text-white parahover">About Us</a>
+          <a class="text-white parahover">Careers</a>
+          <a class="text-white parahover">Corporate Information</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <h6 style="font-size: small" class="text-secondary pt-3">
+            GROUP COMPANIES
+          </h6>
+          <a class="text-white parahover">Company#1</a>
+          <a class="text-white parahover">Company#2</a>
+          <a class="text-white parahover">Company#3</a>
+          <a class="text-white parahover">Company#4</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <h6 style="font-size: small" class="text-secondary pt-3">HELP</h6>
+          <a class="text-white parahover">Payments</a>
+          <a class="text-white parahover">Shipping</a>
+          <a class="text-white parahover">Cancellation & Returns</a>
+          <a class="text-white parahover">FAQ</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <h6 style="font-size: small" class="text-secondary pt-3">
+            CONSUMER POLICY
+          </h6>
+          <a class="text-white parahover">Cancellation & Returns</a>
+          <a class="text-white parahover">Terms of Use</a>
+          <a class="text-white parahover">Security</a>
+          <a class="text-white parahover">Privacy</a>
+          <a class="text-white parahover">Sitemap</a>
+          <a class="text-white parahover">Grivance Redressal</a>
+          <a class="text-white parahover">EPR Compliance</a>
+        </div>
+
+        <div
+          class="vertical_line_footer text-center col-6 col-sm-6 col-md-4 col-lg-2"
+        >
+          <h6 style="font-size: small" class="text-secondary pt-3">MAIL US:</h6>
+          <a class="text-white parahover">E-mail ID</a>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Tel Number</a>
+          <h6 style="font-size: small" class="text-secondary pt-3">SOCIAL:</h6>
+          <a href="/" class="social__icon--link" target="_blank"
+            ><i class="fab fa-facebook text-white"></i
+          ></a>
+          <a href="/" class="social__icon--link" target="_blank"
+            ><i class="fab fa-x-twitter text-white"></i
+          ></a>
+          <a href="/" class="social__icon--link" target="_blank"
+            ><i class="fab fa-youtube text-white"></i
+          ></a>
+          <a href="/" class="social__icon--link" target="_blank"
+            ><i class="fab fa-instagram text-white"></i
+          ></a>
+        </div>
+        <div
+          class="vertical_line_footer_right text-center col-6 col-sm-6 col-md-4 col-lg-2"
+        >
+          <h6 style="font-size: small" class="text-secondary pt-3">
+            REGISTERED OFFICE ADDRESS:
+          </h6>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Address</a>
+          <a class="text-white parahover">Pin code</a>
+          <a class="text-white parahover">Phone Number</a>
+        </div>
+      </div>
+      <div class="row bg-dark p-4 horizontal_footer_line">
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"><i class="fas fa-shop"> </i> Become a Seller</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"><i class="fas fa-star"></i> Advertise</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"><i class="fas fa-gift"></i> Gift Cards</a>
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"
+            ><i class="fas fa-circle-exclamation"></i> Help Center</a
+          >
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover"
+            ><i class="fas fa-copyright"></i> Starting Year - Current Year
+            (Site-name)</a
+          >
+        </div>
+        <div class="text-center col-6 col-sm-6 col-md-4 col-lg-2">
+          <a class="parahover">Icons</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Ends -->
+    <script>
+      src = "https://kit.fontawesome.com/your-fontawesome-kit.js";
+      crossorigin = "anonymous";
+    </script>
+    <script src="/frontend/public/app.js"></script>
   </body>
 </html>
